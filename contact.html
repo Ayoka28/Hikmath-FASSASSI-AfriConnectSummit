@@ -10,18 +10,75 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">AfriConnect Summit 2026</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="programme.html">Programme</a></li>
-                <li><a href="intervenants.html">intervenants</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button id="theme-toggle">Dark/light Mode</button>
-            <div class="hamburger-menu"><span></span><span></span><span></span></div>
+         <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#" class="nav-logo">
+                   <div class="logo"><img src="./images/Afriviolet.jpeg" alt="logo"></div>
+                   <h1>AfriConnect Summit 2026</h1>
+                </a>
+                <ul class="nav-links">
+                   <li><a href="index.html">Accueil</a></li>
+                   <li><a href="programme.html">Programme</a></li>
+                   <li><a href="intervenants.html">intervenants</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><button id="theme-toggle" class="theme-btn" aria-label="changer de thème">
+                   <i class="bi bi-moon-stars-fill" id="theme-icon"></i>
+                   <span class="theme-text">Mode Sombre</span>
+                   </button></li>
+                </ul>
+            
+                <button class="menu-hamburger" aria-label="Ouvrir le menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </nav>
     </header>
+
+         <!-- FOOTER 5(En 3 colonnes Flexbox) -->
+    <footer>
+        <div class="footer-container">
+            <!-- colonne 1: A propos / Infos rapides -->
+           <div class="footer-col">
+               <h4>Africonnect Summit</h4>
+               <p>Le rendez-vous incontournable de l'innovation technologique et de la transformation digitale en Afrique.</p>
+           </div>
+
+           <!-- colonne 2: Liens de navigation Rapides -->
+           <div class="footer-col">
+               <h4>Liens utiles</h4>
+               <ul class="footer-links">
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="programme.html">Programme</a></li>
+                  <li><a href="intervenants.html">Intervenants</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </div>
+
+           <!-- colonne 3 : Réseaux sociaux et contact -->
+           <div class="footer-col">
+               <h4>Suivez-nous</h4>
+               <p>Restez informé des dernières actualités :</p>
+               <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Twitter X"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+               </div>
+           </div>
+        </div>
+
+        <!-- Ligne de copyright et retour en haut -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> AfriConnect Summit - Tous droits réservés</p>
+            <button id="back-to-top" tittle="Retour en haut de la page">
+                <i class="bi bi-arrow-up-circle-fill"></i>
+            </button>
+        </div>
+    </footer>
+
+
+
+
 
 
     <script src="js/main.js"></script>
