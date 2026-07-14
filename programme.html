@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +34,121 @@
             </div>
         </nav>
     </header>
+
+    <main>
+        <!-- hero interne -->
+        <section class="hero-interne">
+            <h1>Programme</h1>
+            <!-- fil d'Ariane -->
+             <nav class="breadcrumb">
+                <a href="index.html">Accueil</a> &gt; <span class="active-page">Programme</span>
+             </nav>
+        </section>
+
+        <!-- Onglets 3 jours -->
+        <section class="programme-tabs-container">
+            <!-- les boutons d'onglets -->
+            <div class="tabs-buttons">
+                <button class="tab-btn active" data-day="jour1">jour 1</button>
+                <button class="tab-btn" data-day="jour2">jour 2</button>
+                <button class="tab-btn" data-day="jour3">jour 3</button>
+            </div>
+
+            <!-- Contenus des plannings (seul le jour 1 est visible au départ)-->
+            <div class="tab-contents">
+                <!-- planning jour 1 -->
+                <div class="tab-content active" id="jour1">
+                    <table class="program-table">
+                        <thead>
+                            <tr>
+                                <th>Heure</th>
+                                <th>Session</th>
+                                <th>Intervenant</th>
+                                <th>Salle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>09:00 - 10:30</td><td>Cérémonie d'Ouverture</td><td>Amadou Diallo</td><td>Amphi A</td></tr>
+                            <tr><td>10:45 - 12:15</td><td>Keynote : L'Afrique Tech</td><td>Fatou Diop</td><td>Amphi A</td></tr>
+                            <tr><td>14:00 - 15:30</td><td>Table Ronde : FinTech</td><td>Moussa Ndiaye</td><td>Salle B10</td></tr>
+                            <tr><td>15:45 - 17:15</td><td>Atelier web Dynamique</td><td>Sokhna Kane</td><td>Labo Infos 1</td></tr>
+                            <tr><td>17:30 - 18:30</td><td>Networking & Pitchs</td><td>Tous</td><td>Hall d'acceuil</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Planning jour 2 (Caché par défaut au début)-->
+                <div class="tab-content" id="jour2">
+                    <table class="program-table">
+                        <thead>
+                            <tr>
+                                <th>Heure</th>
+                                <th>Session</th>
+                                <th>Intervenant</th>
+                                <th>Salle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>09:00 - 10:30</td><td>Introduction à l'IA</td><td>Omar Sy</td><td>Ampphi A</td></tr>
+                            <tr><td>10:45 - 12:15</td><td>Data Science en Afrique</td><td>Mariama Ba</td><td>Amphi B</td></tr>
+                            <tr><td>14:00 - 15:30</td><td>Atelier Base de données</td><td>Kofi Mensah</td><td>Labo Info 2</td></tr>
+                            <tr><td>15:45 - 17:15</td><td>Cybersécurité & Enjeux</td><td>Alioune Sarr</td><td>Salle B10</td></tr>
+                            <tr><td>17:30 - 18:30</td><td>Session de Mentoring</td><td>Equipe ISI</td><td>Espace Coworking</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Planning jour 3 (Caché par défaut au début) -->
+                <div class="tab-content" id="jour3">
+                    <table class="program-table">
+                        <thead>
+                            <tr>
+                                <th>Heure</th>
+                                <th>Session</th>
+                                <th>Intervenant</th>
+                                <th>Salle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>09:00 - 10:30</td><td>Green IT & Energies</td><td>Cheikh Anta</td><td>Amphi A</td></tr>
+                            <tr><td>10:45 - 12:15</td><td>Startups & Levées de fonds</td><td>Aminata Touré</td><td>Amphi A</td></tr>
+                            <tr><td>14:00 - 15:30</td><td>Atelier Cloud Computing</td><td>john Doe</td><td>Labo Info 1</td></tr>
+                            <tr><td>15:45 - 17:15</td><td>Table Ronde : Entrepreneuriat</td><td>Panel d'Experts</td><td>Amphi B</td></tr>
+                            <tr><td>17:30 - 18:30</td><td>Cérémonie de Cloture</td><td>Direction ISI</td><td>Amphi A</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section thématiques (CSS GRID 2x2) -->
+        <section class="thématiques-section">
+            <h2>Thématiques de la Conférence</h2>
+            <div class="thématiques-grid">
+                <div class="theme-card">
+                    <div class="theme-icon">💻</div>
+                    <h3>Développement web</h3>
+                    <p>Découvrez les dernières tendances des frameworks modernes et architectures performantes.</p>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">🤖</div>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>L'IA au service du dévelloppement économique et des solutions locales en Afrique.</p>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">🔒</div>
+                    <h3>Cybersécurité</h3>
+                    <p>Sensibilisation et techniques avancées pour protéger le infrastructures et les donnée.</p>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">☁️</div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>Comprendre le déploiement continu et la gestion de serveurs à grande échelle.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
 
@@ -73,7 +188,7 @@
         <!-- Ligne de copyright et retour en haut -->
         <div class="footer-bottom">
             <p>&copy; <span id="year"></span> AfriConnect Summit - Tous droits réservés</p>
-            <button id="back-to-top" tittle="Retour en haut de la page">
+            <button id="back-to-top" title="Retour en haut de la page">
                 <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
         </div>

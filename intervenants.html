@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +34,114 @@
             </div>
         </nav>
     </header>
+
+    <main>
+        <!-- Hero Interne -->
+        <section class="hero-interne">
+            <h1>Intervenants</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Accueil</a> &gt; <span class="active-page">Intervenants</span>
+            </nav>
+        </section>
+
+        <!-- Filtrage dynamique (boutons)-->
+        <section>
+            <div>
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="tech">IA & Tech</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+            </div>
+        </section>
+
+        <!-- Grille d'intervenants (9 cartes) -->
+        <section class="intervenants-container">
+            <div class="intervenants-grid">
+
+                <!-- Intervenant 1 (IA & TEch) -->
+                <div class="speaker-card" data-category="tech">
+                    <div class="speaker-img-container">
+                        <img src="./images/premium.avif" alt="Amadou Diallo" class="speaker-img">
+                    </div>
+                    <h3>Amadou Diallo</h3>
+                    <p class="specialty">Expert IA & Systèmes Embarqués</p>
+                    <p class="country">sn Sénégal</p>
+                </div>
+
+                <!-- Intervent 2 (Business) -->
+                <div class="speaker-card" data-category="business">
+                    <div class="speaker-img-container">
+                        <img src="./images/double.jpg" alt="Fatou Diop" class="speaker-img">
+                    </div>
+                    <h3>Fatou Diop</h3>
+                    <p class="specialty">Consultante FinTech & Levée de fonds</p>
+                    <p class="country">sn Sénégal</p>
+                </div>
+
+                <!-- Intervenant 4 (Data) -->
+                <div class="speaker-card" data-category="data">
+                    <div class="speaker-img-container">
+                        <img src="./images/homme3.jpg" alt="Moussa Ndiaye" class="speaker-img">
+                    </div>
+                    <h3>Moussa Ndiaye</h3>
+                    <p class="specialty">Data Scientist</p>
+                    <p class="country">ci  Cote d'Ivoire</p>
+                </div>
+
+                <!-- Intervenant 5 (IA & Tech)-->
+                <div class="speaker-card" data-category="tech">
+                    <div class="speaker-img-container">
+                        <img src="./images/homme4.jpg" alt="Omar Sy" class="speaker-img">
+                    </div>
+                    <h3>Omar Sy</h3>
+                    <p class="specialty">Développeur Cloud & DevOps</p>
+                    <p class="country">sn Sénégal</p>
+                </div>
+
+                <!-- Intervenant 6 (Business) -->
+                <div class="speaker-card" data-category="business">
+                    <div class="speaker-img-container">
+                        <img src="./images/girl1.jpg" alt="Aminata Touré" class="speaker-img">
+                    </div>
+                    <h3>Aminata Touré</h3>
+                    <p class="specialty">Expert IA & Systèmes Embarqués</p>
+                    <p class="country">sn Sénégal</p>
+                </div>
+
+                <!-- Intervenant 7 (Design)-->
+                <div class="speaker-card" data-category="design">
+                    <div class="speaker-img-container">
+                        <img src="./images/homme5.jpg" alt="Kofi Mensah" class="speaker-img">
+                    </div>
+                    <h3>Kofi Mensah</h3>
+                    <p class="specialty">Directeur Artistique & Branding</p>
+                    <p class="country">gh Ghana</p>
+                </div>
+
+                <!-- Intervenant 8 (Data)-->
+                <div class="speaker-card" data-category="data">
+                    <div class="speaker-img-container">
+                        <img src="./images/girl2.avif" alt="Mariama Ba" class="speaker-img">
+                    </div>
+                    <h3>Mariama Ba</h3>
+                    <p class="specialty">Administratrice de Base de Données</p>
+                    <p class="country">sn Sénégal</p>
+                </div>
+
+                <!-- Intervenant 9 (IA & Tech)-->
+                <div class="speaker-card" data-category="tech">
+                    <div class="speaker-img-container">
+                        <img src="./images/homme6.jpg" alt="Alioune Sarr" class="speaker-img">
+                    </div>
+                    <h3>Alioune Sarr</h3>
+                    <p class="specialty">Ingenieur en Cybersécurité</p>
+                    <p class="country">sn Sénégal</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
 
         <!-- FOOTER 5(En 3 colonnes Flexbox) -->
     <footer>
@@ -71,7 +179,7 @@
         <!-- Ligne de copyright et retour en haut -->
         <div class="footer-bottom">
             <p>&copy; <span id="year"></span> AfriConnect Summit - Tous droits réservés</p>
-            <button id="back-to-top" tittle="Retour en haut de la page">
+            <button id="back-to-top" title="Retour en haut de la page">
                 <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
         </div>

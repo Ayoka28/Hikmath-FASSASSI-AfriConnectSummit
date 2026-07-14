@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,6 +33,168 @@
             </div>
         </nav>
     </header>
+
+    <main>
+        <!-- Hero interne -->
+        <section class="hero-interne">
+            <h1>Inscription & Contact</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Accueil</a> &gt; <span class="active-page">Contact</span>
+            </nav>
+        </section>
+
+        <!-- Formulaire & Infos (Flexbox 2 Colonnes) -->
+        <section class="contact-section">
+            <div class="contact-container">
+
+                <!-- Colonne gauche : Formulaire -->
+                 <div class="contact-form-col">
+                    <h2>Formulaire d'Inscription</h2>
+                    <div id="success-message" class="success-box hidden">Inscription validée avec succès !</div>
+
+                    <form id="registration-form" novalidate>
+                        <!-- Nom Complet -->
+                        <div class="form-group">
+                            <label for="fullname">Nom complet *</label>
+                            <input type="text" id="fullname" placeholder="votre nom et prenom">
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Adresse Email *</label>
+                            <input type="email" id="email" placeholder="exemple@domaine.com">
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <!-- Téléphone -->
+                        <div class="form-group">
+                            <label for="fullname">Téléphone *</label>
+                            <input type="tel" id="phone" placeholder="Ex: 771234567">
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <!-- Type de participation -->
+                        <div class="form-group">
+                            <label for="participation">Type de participation *</label>
+                            <select id="participation">
+                                <option value="">-- Choisir une option --</option>
+                                <option value="presentiel">Présentiel</option>
+                                <option value="Virtuel">Virtuel (en ligne)</option>
+                                <option value="intervenant">Intervenant / Speaker</option>
+                                <option value="partenaire">Partenaire / Sponsor</option>
+                            </select>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <!-- Pays Africain (Minimum 10 pays) -->
+                        <div class="form-group">
+                            <label>Pays de résidence *</label>
+                            <select id="country">
+                                <option value="">-- Choisir votre pays --</option>
+                                <option value="senegal">Sénégal</option>
+                                <option value="Cote-d-Ivoire">Cote d'Ivoire</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Guinée">Guinée</option>
+                                <option value="Cameroun">Cameroun</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Maroc">Maroc</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Benin">Bénin</option>
+                                <option value="Burkina-Faso">Burkina Faso</option>
+                            </select>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <!-- Message / Motivation -->
+                        <div class="form-group">
+                            <label>Message ou Motivation (minimum 20 Caractère.) *</label>
+                            <texterea id="message" rows="5" placeholder="Expliquez-nous brièvement vos motivations..."></texterea>
+                            <span class="error-msg"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Envoyer l'inscription</button>
+                    </form>
+                </div>
+
+                <!-- Colonne Droite: Infos de Contact -->
+                <div class="contact-info-col">
+                    <h2>Information Utiles</h2>
+                    <div>
+                        <p>📍 <strong>Adresse :</strong> Institut Supérieur de l'Informatique (ISI), Dakar, Sénégal</p>
+                        <p>📞 <strong>Téléphone :</strong> +221 33 800 00 00</p>
+                        <p>✉️ <strong>Email :</strong> contact@africonnectsummit.com</p>
+                    </div>
+
+                    <!-- CARTE GOOGLE MAPS (IFRAME) -->
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61756.170428736106!2d-17.48025384094867!3d14.669520070999765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1724ebcf41b5d%3A0x2d84ad82d5bef1a6!2sDakar-Plateau%2C%20Dakar!5e0!3m2!1sen!2ssn!4v1775853733636!5m2!1sen!2ssn"
+                            width="100%"
+                            height="250"
+                            style="border:0; border-radius: 8px;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!--FAQ EN ACCORDEON PUR (CSS PUR) -->
+        <section class="faq-question">
+            <h2>Foire Aux Questions (FAQ)</h2>
+            <div class="accordion">
+
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq-1" class="accordion-toggle">
+                    <label for="faq-1" class="accordion-header">Ou et quand se déroule le sommet ?</label>
+                    <div class="accordion-content">
+                        <p>L'AfriConnect Summit se déroulera dans les locaux de l'  Institut Supérieur de l'Informatique (ISI) à Dakar, ainsi qu'en ligne pour les participants virtuels.</p>
+                    </div>
+                </div>
+
+                 <!-- Question 2 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq-2" class="accordion-toggle">
+                    <label for="faq-1" class="accordion-header">L'inscription est-elle gratuite ?</label>
+                    <div class="accordion-content">
+                        <p>Oui, l'accès aux conférence de base est entièrement gratuit, mais l'inscription préalable est obligatoire pour recevoir votre badge d'accès.</p>
+                    </div>
+                </div>
+
+                 <!-- Question 3 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq-3" class="accordion-toggle">
+                    <label for="faq-3" class="accordion-header">Qui peut participer à l'évènement ?</label>
+                    <div class="accordion-content">
+                        <p>Le Sommet est ouvert à tous : étudiants, professionnels de la tech, entrepreneurs, chercheurs ou simples passionnés du numérique.</p>
+                    </div>
+                </div>
+
+                 <!-- Question 4 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq-4" class="accordion-toggle">
+                    <label for="faq-4" class="accordion-header">Un certificat de participation est-il fourni ?</label>
+                    <div class="accordion-content">
+                        <p>Oui, un certificat de présence numérique sera délivré à la fin de l'évènement pour tous les inscrits ayant validé leur présence aux sessions.</p>
+                    </div>
+                </div>
+
+                 <!-- Question 5 -->
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq-5" class="accordion-toggle">
+                    <label for="faq-5" class="accordion-header">Comment postuler en tant qu'intervenant ?</label>
+                    <div class="accordion-content">
+                        <p>Sélectionnez simplement l'option "Intervenant" dans le formulaire ci-dessus et détaillez votre sujet de présentation dans le champ motivation.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
 
          <!-- FOOTER 5(En 3 colonnes Flexbox) -->
     <footer>
@@ -70,7 +232,7 @@
         <!-- Ligne de copyright et retour en haut -->
         <div class="footer-bottom">
             <p>&copy; <span id="year"></span> AfriConnect Summit - Tous droits réservés</p>
-            <button id="back-to-top" tittle="Retour en haut de la page">
+            <button id="back-to-top" title="Retour en haut de la page">
                 <i class="bi bi-arrow-up-circle-fill"></i>
             </button>
         </div>
